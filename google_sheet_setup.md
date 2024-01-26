@@ -54,3 +54,17 @@
 
 ### 16 - Your credentials should be in your downloads folder.
 ![in downloads](/screenshots/google_sheet/shot15_key_should_be_in_downloads.png)
+
+
+# Enable Google Sheets API
+### 1 - Find the Google Sheets API
+![find api](/screenshots/google_sheet/shot_a_google_sheets_api.png)
+
+### 3 - Click Enable
+![click enable](/screenshots/google_sheet/shot_b_enable.png)
+
+
+# Finally - 
+### Grab the client email variable from your creds.json file, open your worksheet, click Share, and paste it in.
+![share with client email](/screenshots/google_sheet/shot_c_share_sheet_with_client_email.png)
+### Select editor in the dropdown, uncheck Notify people, and click Share.
