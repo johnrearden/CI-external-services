@@ -11,20 +11,26 @@ programmatic access to our bucket, in order for our Django app to be able to upl
 ### Step 1 - Set up the bucket
 
 1:  Create a new bucket in S3
+![alt text](/screenshots/aws/image1.png)
 
 2:  Click ACLs enabled (bucket owner preferred)
+![alt text](/screenshots/aws/image2.png)
 
 3:  Uncheck the Block All Public Access checkbox
+![alt text](/screenshots/aws/image3.png)
 
-4:  Click on 'Create Bucket'
+4:  Click on 'Create Bucket' at the bottom of the page.
 
 5:  Click on your new bucket in the bucket list
 
 6:  On the Properties tab, scroll to the bottom. The last panel is Static Website Hosting. 
+![alt text](/screenshots/aws/image4.png)
 - Click Edit
+![alt text](/screenshots/aws/image5.png)
 - Click Enable.
 - Fill in values for the index and error documents. Use the names suggested by the 
        placeholder text.
+       ![alt text](/screenshots/aws/image6.png)
 - Click Save Changes.
 
 7:  On the permissions tab, scroll down to the CORS panel. Paste in this configuration -
@@ -57,6 +63,7 @@ programmatic access to our bucket, in order for our Django app to be able to upl
 - You'll be shown the generated policy, which you'll need to copy and paste into the Bucket Policy Editor, which is on the previously opened tab.
 - Add '/*' to the end of the "Resource" key.
 - Click Save Changes
+![alt text](/screenshots/aws/image7.png)
 
 9: Scroll to the Access Control List panel, and click Edit. 
 - Under 'Everyone (public access)', click the List button
